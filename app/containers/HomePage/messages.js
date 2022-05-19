@@ -8,14 +8,15 @@ import { defineMessages } from 'react-intl';
 export const scope = 'boilerplate.containers.HomePage';
 
 export default defineMessages({
-  startProjectHeader: {
-    id: `${scope}.start_project.header`,
-    defaultMessage: 'Start your next react project in seconds',
-  },
-  startProjectMessage: {
-    id: `${scope}.start_project.message`,
+  header: {
+    id: `${scope}.header`,
     defaultMessage:
-      'A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices',
+      'At Earth Recycler, the concept of solid waste management is redefined through professional and systematic process incorporating awareness program on source',
+  },
+  content: {
+    id: `${scope}.content`,
+    defaultMessage:
+      'Earth Recycler is a pioneer in providing integrated environmental friendly services & solutions, strongly committed to protecting the environment and build',
   },
   trymeHeader: {
     id: `${scope}.tryme.header`,

@@ -1,29 +1,31 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 
+import { Typography } from 'antd';
+
 import A from 'components/A';
-import LocaleToggle from 'containers/LocaleToggle';
-import Wrapper from './Wrapper';
 import messages from './messages';
 
 function Footer() {
   return (
-    <Wrapper>
-      <section>
-        <FormattedMessage {...messages.licenseMessage} />
-      </section>
-      <section>
-        <LocaleToggle />
-      </section>
-      <section>
+    <footer
+      style={{
+        background: 'lightgreen',
+        height: '2rem',
+        position: 'absolute',
+        width: '100%',
+        bottom: 0,
+      }}
+    >
+      <Typography style={{ textAlign: 'center' }}>
         <FormattedMessage
           {...messages.authorMessage}
           values={{
-            author: <A href="https://twitter.com/mxstbr">Max Stoiber</A>,
+            year: <A href="/">2022</A>,
           }}
         />
-      </section>
-    </Wrapper>
+      </Typography>
+    </footer>
   );
 }
 
